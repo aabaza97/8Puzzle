@@ -13,6 +13,9 @@
 		AC471B662778998700E7A032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC471B642778998700E7A032 /* Main.storyboard */; };
 		AC471B682778998800E7A032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC471B672778998800E7A032 /* Assets.xcassets */; };
 		AC471B6B2778998800E7A032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC471B692778998800E7A032 /* LaunchScreen.storyboard */; };
+		AC471B7727789BA300E7A032 /* MovementDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC471B7627789BA300E7A032 /* MovementDirections.swift */; };
+		AC471B7927789C2400E7A032 /* AStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC471B7827789C2400E7A032 /* AStar.swift */; };
+		AC471B7B27789F3200E7A032 /* PuzzleGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC471B7A27789F3200E7A032 /* PuzzleGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AC471B672778998800E7A032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC471B6A2778998800E7A032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC471B6C2778998800E7A032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC471B7627789BA300E7A032 /* MovementDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementDirections.swift; sourceTree = "<group>"; };
+		AC471B7827789C2400E7A032 /* AStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AStar.swift; sourceTree = "<group>"; };
+		AC471B7A27789F3200E7A032 /* PuzzleGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		AC471B5D2778998700E7A032 /* 8Puzzle */ = {
 			isa = PBXGroup;
 			children = (
-				AC471B5E2778998700E7A032 /* AppDelegate.swift */,
-				AC471B602778998700E7A032 /* SceneDelegate.swift */,
-				AC471B622778998700E7A032 /* ViewController.swift */,
-				AC471B642778998700E7A032 /* Main.storyboard */,
+				AC471B7527789B7900E7A032 /* Model */,
+				AC471B7427789B6F00E7A032 /* View */,
+				AC471B7327789B6000E7A032 /* Controller */,
+				AC471B7227789B4700E7A032 /* AppSupport */,
 				AC471B672778998800E7A032 /* Assets.xcassets */,
-				AC471B692778998800E7A032 /* LaunchScreen.storyboard */,
 				AC471B6C2778998800E7A032 /* Info.plist */,
 			);
 			path = 8Puzzle;
+			sourceTree = "<group>";
+		};
+		AC471B7227789B4700E7A032 /* AppSupport */ = {
+			isa = PBXGroup;
+			children = (
+				AC471B5E2778998700E7A032 /* AppDelegate.swift */,
+				AC471B602778998700E7A032 /* SceneDelegate.swift */,
+				AC471B692778998800E7A032 /* LaunchScreen.storyboard */,
+			);
+			path = AppSupport;
+			sourceTree = "<group>";
+		};
+		AC471B7327789B6000E7A032 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC471B622778998700E7A032 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC471B7427789B6F00E7A032 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC471B642778998700E7A032 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC471B7527789B7900E7A032 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC471B7627789BA300E7A032 /* MovementDirections.swift */,
+				AC471B7827789C2400E7A032 /* AStar.swift */,
+				AC471B7A27789F3200E7A032 /* PuzzleGame.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +181,10 @@
 			files = (
 				AC471B632778998700E7A032 /* ViewController.swift in Sources */,
 				AC471B5F2778998700E7A032 /* AppDelegate.swift in Sources */,
+				AC471B7727789BA300E7A032 /* MovementDirections.swift in Sources */,
 				AC471B612778998700E7A032 /* SceneDelegate.swift in Sources */,
+				AC471B7927789C2400E7A032 /* AStar.swift in Sources */,
+				AC471B7B27789F3200E7A032 /* PuzzleGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
